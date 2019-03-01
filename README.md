@@ -3,6 +3,7 @@ API desenvolvida em Django e DjangoRest para administrar os gastos/ganhos de usu
 
 Aplicação disponível em https://api-planilha-contas.herokuapp.com
 
-[![Python 3](https://pyup.io/repos/github/alisonamerico/planilha-de-contas/python-3-shield.svg)](https://pyup.io/repos/github/alisonamerico/planilha-de-contas/)
+[![codecov](https://codecov.io/gh/alisonamerico/planilha-de-contas/branch/master/graph/badge.svg)](https://codecov.io/gh/alisonamerico/planilha-de-contas)
 [![Build Status](https://travis-ci.org/alisonamerico/planilha-de-contas.svg?branch=master)](https://travis-ci.org/alisonamerico/planilha-de-contas)
+[![Python 3](https://pyup.io/repos/github/alisonamerico/planilha-de-contas/python-3-shield.svg)](https://pyup.io/repos/github/alisonamerico/planilha-de-contas/)
 [![Updates](https://pyup.io/repos/github/alisonamerico/planilha-de-contas/shield.svg)](https://pyup.io/repos/github/alisonamerico/planilha-de-contas/)
