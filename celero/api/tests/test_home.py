@@ -1,6 +1,11 @@
-from django.test import Client
+import pytest
 
 
-def test_status_code(client: Client):
-    resp = client.get('/')
+@pytest.fixture
+def resp(client, db):
+    resp = client.get('/api/v1')
+    return resp
+
+
+def test_status_code(resp):
     assert resp.status_code == 200
