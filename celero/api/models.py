@@ -88,3 +88,12 @@ class User(AbstractBaseUser, PermissionsMixin):
     def email_user(self, subject, message, from_email=None, **kwargs):
         """Send an email to this user."""
         send_mail(subject, message, from_email, [self.email], **kwargs)  # pragma: no cover
+
+
+class Contabilidade(models.Model):
+    nome = models.CharField(max_length=100)
+    valor = models.DecimalField(max_digits=6, decimal_places=2)
+
+    def __str__(self):
+        """A string representation of the model."""
+        return self.nome
