@@ -94,6 +94,14 @@ class Contabilidade(models.Model):
     nome = models.CharField(max_length=100)
     valor = models.DecimalField(max_digits=6, decimal_places=2)
 
+    created = models.DateTimeField('Criado em', auto_now_add=True)
+    modified = models.DateTimeField('Modificado em', auto_now=True)
+
+    class Meta:
+        verbose_name = 'Contabilidade'
+        verbose_name_plural = 'Contabilidades'
+        ordering = ['nome']
+
     def __str__(self):
         """A string representation of the model."""
         return self.nome  # pragma: no cover
