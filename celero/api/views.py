@@ -1,4 +1,6 @@
 from rest_framework import generics, filters
+from rest_framework.authentication import SessionAuthentication
+
 
 from celero.api import models
 from . import serializers
@@ -10,6 +12,7 @@ class ListContabilidade(generics.ListCreateAPIView):
     filter_backends = (filters.SearchFilter, filters.OrderingFilter,)
     search_fields = ('nome', 'valor')
     ordering_fields = ('nome', 'valor')
+    authentication_classes = (SessionAuthentication,)
 
 
 class DetailContabilidade(generics.RetrieveUpdateDestroyAPIView):
