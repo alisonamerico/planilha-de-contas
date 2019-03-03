@@ -3,7 +3,7 @@ import pytest
 
 @pytest.fixture
 def resp(client, db):
-    resp = client.get('/api/v1')
+    resp = client.get('/api/v1/')
     return resp
 
 
