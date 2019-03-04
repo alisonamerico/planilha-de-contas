@@ -7,10 +7,10 @@ For more information on this file, see
 https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/
 """
 
-import os
+import os  # pragma: no cover
+from dj_static import Cling  # pragma: no cover
+from django.core.wsgi import get_wsgi_application  # pragma: no cover
 
-from django.core.wsgi import get_wsgi_application
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'celero.settings')  # pragma: no cover
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'celero.settings')
-
-application = get_wsgi_application()
+application = Cling(get_wsgi_application())  # pragma: no cover
