@@ -16,9 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from rest_framework.routers import DefaultRouter
+
+from celero.api.views import ContabilidadeViewSet
+
+router = DefaultRouter()
+router.register('api/v1/lista', ContabilidadeViewSet, base_name='Contabilidade')
 
 urlpatterns = [
+    path('', include(router.urls)),
     path('admin/', admin.site.urls),
-    path('api/v1/', include('celero.api.urls', namespace='api')),
     path('api-auth/', include('rest_framework.urls')),
 ]
