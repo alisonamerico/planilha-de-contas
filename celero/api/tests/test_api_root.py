@@ -1,9 +1,13 @@
 import pytest
 
+"""
+Executa testes referentes à página inicial da API - (API Root)
+"""
+
 
 @pytest.fixture
 def resp(client, db):
-    resp = client.get('/api/v1/')
+    resp = client.get('/')
     return resp
 
 
