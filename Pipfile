@@ -17,6 +17,7 @@ dj-database-url = "*"
 psycopg2-binary = "*"
 djangorestframework = "*"
 django-filter = "*"
+dj-static = "*"
 
 [requires]
 python_version = "3.7"
