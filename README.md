@@ -22,7 +22,6 @@ Entrega Contínua:
  
  - python-decouple: Para desacoplar as configurações de instância da aplicação.
 
- - CDN da Amazon (S3): Para poder enviar e acessar os arquivos na nuvem.   
  
 
 Como instalar localmente (supondo que você tenha git e python> = 3.7 instalado):
