@@ -91,6 +91,11 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 
 class Contabilidade(models.Model):
+    CHOICES = (
+        ('ENTRADA', 'Entrada'),
+        ('SAIDA', 'Saída'),
+    )
+    controle = models.CharField(max_length=50, choices=CHOICES)
     nome = models.CharField(max_length=100)
     valor = models.DecimalField(max_digits=6, decimal_places=2)
 

@@ -21,7 +21,8 @@ from rest_framework.routers import DefaultRouter
 from celero.api.views import ContabilidadeViewSet
 
 router = DefaultRouter()
-router.register('api/v1/lista', ContabilidadeViewSet, base_name='Contabilidade')
+router.register('api/v1/lista', ContabilidadeViewSet, base_name='contabilidade')
+
 
 urlpatterns = [
     path('', include(router.urls)),

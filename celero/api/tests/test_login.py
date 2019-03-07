@@ -3,7 +3,7 @@ import pytest
 from django_assertions import dj_assert_contains
 
 """
-Executa testes de validação do usuário
+Executa testes de validação do usuário.
 """
 
 
